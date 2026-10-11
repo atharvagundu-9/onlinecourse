@@ -1,0 +1,99 @@
+:root {
+    --ink: #13213c;
+    --muted: #5f6b7a;
+    --brand: #3157d5;
+    --brand-dark: #1836a3;
+    --surface: #f4f7fb;
+}
+
+body {
+    background: var(--surface);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.course-hero {
+    background: linear-gradient(135deg, #e8edff 0%, #f7f9ff 55%, #e8f9f2 100%);
+    border-bottom: 1px solid #dce4f1;
+}
+
+.assessment-banner {
+    color: #fff;
+    background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+}
+
+.choice-row {
+    background: #f8fafc;
+    border: 1px solid #e4e9f1;
+    border-radius: .75rem;
+    margin-top: .65rem;
+    padding: .85rem 1rem .85rem 2.6rem;
+}
+
+.choice-row:hover {
+    border-color: #b8c7f5;
+    background: #f1f5ff;
+}
+
+.question-number {
+    align-items: center;
+    background: #e7edff;
+    border-radius: 50%;
+    color: var(--brand-dark);
+    display: inline-flex;
+    font-size: .8rem;
+    height: 1.8rem;
+    justify-content: center;
+    margin-right: .45rem;
+    width: 1.8rem;
+}
+
+.result-hero {
+    color: #fff;
+}
+
+.result-pass {
+    background: linear-gradient(135deg, #087f5b, #20a47a);
+}
+
+.result-fail {
+    background: linear-gradient(135deg, #a13b36, #dc5c50);
+}
+
+.result-icon {
+    align-items: center;
+    background: rgba(255,255,255,.18);
+    border: 2px solid rgba(255,255,255,.55);
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 2rem;
+    font-weight: 800;
+    height: 4rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 4rem;
+}
+
+.score-pill {
+    background: rgba(255,255,255,.18);
+    border: 1px solid rgba(255,255,255,.35);
+    border-radius: 999px;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 750;
+    padding: .75rem 1.35rem;
+}
+
+.score-pill span {
+    font-size: .9rem;
+    font-weight: 500;
+    opacity: .9;
+}
+
+.result-card.correct {
+    border-left: .35rem solid #198754 !important;
+}
+
+.result-card.incorrect {
+    border-left: .35rem solid #dc3545 !important;
+}
